@@ -42,7 +42,7 @@ window.addEventListener("scroll", () => {
   }
 });
  // Array of image filenames
- const images = Array.from({ length: 10 }, (_, i) => `images/${i + 1}.png`);
+ const images = Array.from({ length: 13 }, (_, i) => `images/${i + 1}.png`);
  let currentIndex = 0;
 
  const viewerImage = document.getElementById('photo-viewer-image');

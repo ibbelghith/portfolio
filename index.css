@@ -489,7 +489,7 @@ body:not(.user-is-tabbing) a:focus {
 }
 
 .work__box:not(:last-child) {
-    margin-bottom: 25rem;
+    margin-bottom: 13rem;
 }
 
 @media(max-width: 500px) {
@@ -545,27 +545,7 @@ body:not(.user-is-tabbing) a:focus {
 /* ----- Clients ----- */
 /* --------------------------------------- */
 
-.client__logos {
-    display: flex;
-    justify-content: space-between;
-    filter: invert(100%) grayscale(100%) opacity(.8);
-}
 
-.client__logo {
-    height: 6.5rem;
-    max-width: 18rem;
-}
-
-@media(max-width: 1240px) {
-    .client__logos {
-        overflow-x: scroll;
-        padding: var(--gutter-normal);
-    }
-
-    .client__logo:not(:last-of-type) {
-        margin-right: var(--gutter-medium);
-    }
-}
 
 /* --------------------------------------- */
 /* ----- About ----- */
@@ -646,4 +626,49 @@ body:not(.user-is-tabbing) a:focus {
     .footer {
         padding: var(--gutter-medium) 0;
     } 
+}
+.skills {
+    padding: 60px 20px;
+    background-color: #000000;
+}
+
+.skills h2 {
+    text-align: left;
+    font-size: 6rem;
+    margin-bottom: 20px;
+}
+
+.skills__content {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+.skills__category {
+    width: 30%;
+    margin: 10px 0;
+}
+
+.skills__category h3 {
+    font-size: 1.5rem;
+    color: #ffffff;
+    display: inline-block;
+    position: relative;
+    margin-bottom: 10px; /* Adds space between the subtitle and the content */
+}
+
+.skills__category h3::after {
+    content: '';
+    display: block;
+    height: 2px;
+    background-color: #0066cc; /* Blue line */
+    width: 70%; /* Adjust the width to half of the subtitle */
+    position: absolute;
+    left: 0;
+    bottom: -5px; /* Adjust the position if needed */
+}
+
+.skills__category p {
+    font-size: 1rem;
+    color: #ffffff;
 }
